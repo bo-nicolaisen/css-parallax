@@ -4,11 +4,26 @@
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Barlow Condensed', sans-serif; */
-
+html{
+  font-size:1.5vw;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     padding: 0px;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Barlow Condensed', sans-serif;
+  color: white;
+}
+
+h1{
+  font-size: 8rem;
+}
+
+h2{
+  font-size: 4rem;
 }
 
 
@@ -30,16 +45,17 @@ position: relative;
 display: flex;
 align-items: center;
 justify-content: center;
-width: 100%;
+width: 100vw;
 
- height: 100vh;
+ height: calc((100vw/16)*9);
 /*til 3d effekt*/
 transform-style: preserve-3d;
 z-index: -1;
 }
 
 
-#background,#middleground, #foreground{
+
+ #background,#middleground, #foreground{
    
 position: absolute;
    
@@ -51,34 +67,41 @@ width: 100%;
 }
 
 #background{
-  transform: translateZ(-10px) scale(2.2);
+  transform: translateZ(-10px)  scale(3);
 }
 
 #middleground{
-    transform: translateZ(-5px) scale(1.5);
+    transform: translateZ(-5px) scale(1.8);
   }
 
   #foreground{
-    transform: translateZ(-3px) scale(1.4);
+    transform: translateZ(-3px) scale(1.6);
   }
 
 
 
 #title{
    
-    font-family: 'Barlow Condensed', sans-serif;   
-    font-size: 8rem;
+      
+
     color: rgb(51, 14, 14);
     color: white;
 }
 
 
-.mainSection{
+.mainContent{
 color: white;
-background-color: dimgrey;
-margin: 0;
-padding: 1+px;
+font-size: 1.2rem;
+background-color: rgb(43, 34, 34);
+padding-left: 10%;
+padding-right: 10%;
+padding-top: 5%;
+padding-bottom: 20%;
+
 }
+
+
+
 
 
 
